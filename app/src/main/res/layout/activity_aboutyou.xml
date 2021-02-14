@@ -40,11 +40,14 @@
 
     <EditText
         android:id="@+id/yourname"
-        android:layout_width="347dp"
+        android:layout_width="327dp"
         android:layout_height="50dp"
         android:layout_marginBottom="161dp"
+        android:autofillHints=""
         android:background="@drawable/mobile_no_shape"
         android:hint="@string/yourname"
+        android:textColor="@color/black"
+        android:inputType="text"
         android:textAlignment="textStart"
         android:textColorHint="@color/black"
         android:textSize="20sp"
@@ -53,34 +56,35 @@
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
-        android:autofillHints=""
-        android:inputType="text" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <EditText
         android:id="@+id/dob"
-        android:layout_width="347dp"
+        android:layout_width="327dp"
         android:layout_height="50dp"
         android:layout_marginBottom="161dp"
+        android:autofillHints=""
+        android:textColor="@color/black"
         android:background="@drawable/mobile_no_shape"
         android:hint="@string/dob"
+        android:inputType="none"
+        android:focusableInTouchMode="false"
         android:textAlignment="gravity"
         android:textColorHint="@color/black"
         android:textSize="20sp"
-        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.701" />
 
     <EditText
         android:id="@+id/state"
-        android:layout_width="347dp"
+        android:layout_width="327dp"
         android:layout_height="50dp"
         android:layout_marginBottom="161dp"
+        android:textColor="@color/black"
+        android:autofillHints=""
         android:background="@drawable/mobile_no_shape"
         android:hint="@string/state"
         android:inputType="text"
@@ -89,34 +93,33 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.886" />
 
     <EditText
         android:id="@+id/district"
-        android:layout_width="347dp"
+        android:layout_width="327dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="161dp"
+        android:autofillHints=""
         android:background="@drawable/mobile_no_shape"
+        android:textColor="@color/black"
         android:hint="@string/district"
         android:inputType="text"
         android:textAlignment="gravity"
         android:textColorHint="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.918" />
 
     <Button
-        android:id="@+id/next"
-        android:layout_width="345dp"
+        android:id="@+id/next_button"
+        android:layout_width="327dp"
         android:layout_height="54dp"
         android:background="@drawable/newuser_button_shape"
         android:text="@string/next"
@@ -124,8 +127,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,8 @@
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.086"
+        android:contentDescription="@string/app_name"/>
 
     <TextView
         android:id="@+id/Register_tv"
@@ -38,43 +39,45 @@
         android:id="@+id/termslink"
         android:layout_width="127dp"
         android:layout_height="22dp"
+        android:layout_marginStart="3dp"
         android:clickable="true"
         android:text="@string/termslink"
         android:textColor="@color/black"
-        android:layout_marginLeft="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintVertical_bias="0.681" />
 
     <TextView
         android:id="@+id/and_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
         android:text="@string/and"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintVertical_bias="0.678" />
 
     <TextView
         android:id="@+id/privacy_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
         android:clickable="true"
         android:text="@string/Privacy"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        app:layout_constraintVertical_bias="0.678" />
 
     <com.hbb20.CountryCodePicker
         android:id="@+id/country_code"
@@ -95,6 +98,7 @@
         android:layout_height="50dp"
         android:background="@drawable/mobile_no_shape"
         android:hint="@string/mobileno"
+        android:textColor="@color/black"
         android:inputType="phone"
         android:textAlignment="center"
         android:textColorHint="@color/black"
@@ -104,40 +108,46 @@
         app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
+        app:layout_constraintVertical_bias="0.312"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/otp"
-        android:layout_width="347dp"
+        android:layout_width="327dp"
         android:layout_height="50dp"
         android:layout_marginBottom="161dp"
-        android:hint="@string/OTP"
-        android:textSize="20sp"
-        android:textColorHint="@color/black"
-        android:textAlignment="center"
+        android:autofillHints=""
+        android:textColor="@color/black"
         android:background="@drawable/mobile_no_shape"
+        android:hint="@string/OTP"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <TextView
         android:id="@+id/terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="9dp"
         android:text="@string/termsofservice"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
+        app:layout_constraintVertical_bias="0.639" />
 
     <Button
-        android:id="@+id/getotp"
+        android:id="@+id/verify_button"
         android:layout_width="330dp"
         android:layout_height="54dp"
         android:background="@drawable/newuser_button_shape"
@@ -150,6 +160,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.882" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

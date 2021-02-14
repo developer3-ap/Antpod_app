@@ -11,9 +11,12 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="386dp"
-        android:layout_height="match_parent"
+        android:layout_height="350dp"
         android:background="#ffffff"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="369dp"
@@ -52,7 +55,8 @@
 
                 <RadioButton
                     android:id="@+id/currentlocation"
-                    android:layout_width="match_parent"
+                    android:layout_width="275dp"
+                    android:layout_marginStart="10dp"
                     android:layout_height="match_parent"
                     android:checked="false"
                     android:text="@string/nearmylocation"
@@ -64,6 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
                     android:checked="false"
                     android:text="@string/addnewlocation"
                     android:textColor="@color/black"

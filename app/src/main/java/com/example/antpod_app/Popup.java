@@ -18,6 +18,7 @@ import static android.R.layout.simple_spinner_dropdown_item;
 public class Popup extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner spinner;
     String[] spinner_options = {"1","2","3","4","5","6","7","8","9","10"};
+
     public void showpopup(final View view) {
         LayoutInflater inflater = (LayoutInflater)view.getContext().getSystemService(view.getContext().LAYOUT_INFLATER_SERVICE);
         View popupview = inflater.inflate(R.layout.popup_window,null);
@@ -30,12 +31,9 @@ public class Popup extends AppCompatActivity implements AdapterView.OnItemSelect
         final PopupWindow popupWindow = new PopupWindow(popupview,width,height,focusable);
         popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
 
-        popupview.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                popupWindow.dismiss();
-                return true;
-            }
+        popupview.setOnTouchListener((v, event) -> {
+            popupWindow.dismiss();
+            return true;
         });
         spinner = popupview.findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, simple_spinner_dropdown_item, spinner_options);

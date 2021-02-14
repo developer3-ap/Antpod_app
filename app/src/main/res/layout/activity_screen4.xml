@@ -13,6 +13,7 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:src="@drawable/backarrow"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
@@ -35,14 +36,15 @@
         app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
+        app:layout_constraintVertical_bias="0.203"
+        tools:targetApi="p" />
 
     <Button
-        android:id="@+id/done"
+        android:id="@+id/drawfarm"
         android:layout_width="345dp"
         android:layout_height="54dp"
         android:background="@drawable/newuser_button_shape"
-        android:text="@string/done"
+        android:text="@string/drawfarm"
         android:textColor="@color/yellow"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

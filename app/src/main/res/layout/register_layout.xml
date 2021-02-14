@@ -18,7 +18,8 @@
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.086"
+        android:contentDescription="@string/app_name"/>
 
     <TextView
         android:id="@+id/Register_tv"
@@ -39,42 +40,46 @@
         android:id="@+id/termslink"
         android:layout_width="127dp"
         android:layout_height="22dp"
+        android:layout_marginStart="30dp"
         android:clickable="true"
         android:text="@string/termslink"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="0.466" />
 
     <TextView
         android:id="@+id/and_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="3dp"
         android:text="@string/and"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.464" />
 
     <TextView
         android:id="@+id/privacy_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:clickable="true"
         android:text="@string/Privacy"
         android:textColor="@color/black"
-        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.463" />
 
     <com.hbb20.CountryCodePicker
         android:id="@+id/country_code"
@@ -94,6 +99,7 @@
         android:layout_height="50dp"
         android:background="@drawable/mobile_no_shape"
         android:hint="@string/mobileno"
+        android:textColor="@color/black"
         android:inputType="phone"
         android:textAlignment="center"
         android:textColorHint="@color/black"
@@ -103,14 +109,16 @@
         app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.309"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/terms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
         android:text="@string/termsofservice"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
